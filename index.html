@@ -80,7 +80,7 @@
     <div class="container">
         <h2>Age Calculator</h2>
         <form method="POST" id="ageForm">
-            {% csrf_token %}
+            {{% csrf_token %}}
             <div class="demo">
             <div class="abc">
                <input type="number" name="birth_day" placeholder="Enter Birth Day" required><br>
@@ -98,11 +98,11 @@
             <button type="button" class="reset-btn" onclick="resetForm()">Reset</button>
         </form>
         <h3 id="ageResult">
-            {% if age is not None %}
+            {{% if age is not None %}}
                 Years: {{ age.0 }} | Months: {{ age.1 }} | Days: {{ age.2 }}
-            {% else %}
+            {{% else %}}
                 Years: 0 | Months: 0 | Days: 0
-            {% endif %}
+            {{% endif %}}
         </h3>
         
         
