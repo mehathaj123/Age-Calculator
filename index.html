@@ -80,7 +80,7 @@
     <div class="container">
         <h2>Age Calculator</h2>
         <form method="POST" id="ageForm">
-            {{% csrf_token %}}
+            {% csrf_token %}
             <div class="demo">
             <div class="abc">
                <input type="number" name="birth_day" placeholder="Enter Birth Day" required><br>
